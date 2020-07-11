@@ -2,15 +2,17 @@
   <div id="app">
     <Navbar/>
     <router-view/>
+    <Bottombar/>
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/Navbar.vue'
+import Bottombar from '@/components/Bottombar.vue'
 
 export default {
   components: {
-    Navbar
+    Navbar, Bottombar
   }
 }
 </script>
