@@ -1,4 +1,5 @@
 <template>
+<div class="container">
  <nav class="N/A transparent">
     <div class="nav-wrapper">
         <a href="#" class="burger">
@@ -10,6 +11,7 @@
         </a>
     </div>
   </nav>
+  </div>
 </template>
 
 

@@ -1,21 +1,23 @@
 <template>
   <div id="app">
-    <Navbar/>
-    <Sidebar/>
-    <router-view/>
-    <Bottombar/>
+    <component :is="layout">
+      <router-view/>
+    </component>
   </div>
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue'
-import Sidebar from '@/components/Sidebar.vue'
-import Bottombar from '@/components/Bottombar.vue'
-
+import MainLayout from '@/layouts/MainLayout'
+import AuthLayout from '@/layouts/AuthLayout'
 
 export default {
   components: {
-    Navbar, Bottombar, Sidebar
+    MainLayout, AuthLayout
+  },
+  computed: {
+    layout() {
+      return (this.$route.meta.layout) + '-layout'
+    }
   }
 }
 </script>
