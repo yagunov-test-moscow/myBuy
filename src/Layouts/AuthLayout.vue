@@ -13,10 +13,12 @@ export default {
 
 <style lang="scss">
 .bg {
-  width: 100%;
-  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   padding: 3em 1em;
-  text-align: center;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   background:linear-gradient(90deg,
     #105B63 20%,

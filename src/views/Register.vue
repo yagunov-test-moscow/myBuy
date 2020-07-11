@@ -1,8 +1,10 @@
 <template>
+  <div class="row">
+    <div class="col s12 m6">
   <form class="card auth-card" 
   style="
   border-radius: 10px;
-  padding: 10px 10px 20px;"
+  padding: 10px 10px 40px;"
   >
     <div class="card-content">
       <span class="card-title" style="text-align: center">MyBuy</span>
@@ -57,6 +59,8 @@
       </p>
     </div>
   </form>
+  </div>
+  </div>
 </template>
 
 <script>

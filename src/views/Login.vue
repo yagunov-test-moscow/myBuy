@@ -1,9 +1,10 @@
 <template>
+  <div class="row">
+    <div class="col s12 m6">
   <form class="card auth-card" 
   style="
-  max-width: 500px;
   border-radius: 10px;
-  padding: 10px 10px 20px;">
+  padding: 10px 10px 40px;">
     <div class="card-content">
       <span class="card-title" style="text-align: center;">MyBuy</span>
       <span class="card-title" style="text-align: center; margin-top: 30px;">Вход</span>
@@ -34,7 +35,7 @@
         >Пароль должен быть больше  символов. Сейчас он  </small>
       </div>
     </div>
-    <div class="card-action">
+    <div class="card-action" style="padding: 20px;">
           <button
               class="btn waves-effect light-blue darken-2 right" style="text-transform: none;"
               type="submit"
@@ -46,6 +47,8 @@
       </p>
     </div>
   </form>
+   </div>
+    </div>
 </template>
 
 <script>
@@ -55,5 +58,7 @@ export default {
 </script>
 
 <style>
-
+.card .card-action {
+  padding: 20px;
+}
 </style>
