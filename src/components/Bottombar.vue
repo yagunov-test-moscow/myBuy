@@ -1,9 +1,15 @@
 <template>
         <footer class="page-footer white">
             <div class="buttons-list">
-                <a class="btn-flat">Все</a>
-                <a class="btn-flat">Активные</a>
-                <a class="btn-flat">Выполненные</a>
+                <a class="btn-flat">
+                    <i class="material-icons" style="font-size: 1.7rem">toc</i>
+                </a>
+                <a class="btn-flat">
+                    <i class="material-icons" style="font-size: 1.7rem">whatshot</i>
+                </a>
+                <a class="btn-flat">
+                    <i class="material-icons" style="font-size: 1.7rem">verified_user</i>
+                </a>
             </div>
         </footer>
 </template>
@@ -31,9 +37,9 @@ export default {
     display: flex;
     justify-content: space-around;
 }
-.btn-small{
-    height: 100%;
+.material-icons {
     color: grey;
 }
+
 
 </style>

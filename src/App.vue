@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Navbar/>
+    <Sidebar/>
     <router-view/>
     <Bottombar/>
   </div>
@@ -8,11 +9,13 @@
 
 <script>
 import Navbar from '@/components/Navbar.vue'
+import Sidebar from '@/components/Sidebar.vue'
 import Bottombar from '@/components/Bottombar.vue'
+
 
 export default {
   components: {
-    Navbar, Bottombar
+    Navbar, Bottombar, Sidebar
   }
 }
 </script>

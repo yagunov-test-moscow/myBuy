@@ -5,7 +5,7 @@
             <i class="material-icons">dehaze</i>
         </a>
           <input placeholder="Заметка..." id="first_name" type="text" class="validate">
-        <a href="#" class="btn-flat ">
+        <a href="#" class="btn-flat">
             <i class="material-icons">keyboard_return</i>
         </a>
     </div>
