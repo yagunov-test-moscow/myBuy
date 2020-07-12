@@ -1,10 +1,11 @@
 <template>
 <div>
     <Navbar @click="isOpen = !isOpen" />
-    <Sidebar v-model="isOpen"
+    <Sidebar 
+    v-model="isOpen"
     @click="isOpen = !isOpen"
     />
-    
+    <router-view/>
     <Bottombar/>
 </div>
 </template>
