@@ -2,7 +2,7 @@
 <div class="container">
  <nav class="N/A transparent">
     <div class="nav-wrapper">
-        <a href="#" class="burger">
+        <a href="#" class="burger" @click.prevent="$emit('click')">
             <i class="material-icons">dehaze</i>
         </a>
           <input placeholder="Заметка..." id="first_name" type="text" class="validate">
@@ -15,7 +15,7 @@
 </template>
 
 
-<script>
+<script scoped>
 export default {
 
 }

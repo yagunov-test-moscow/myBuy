@@ -1,7 +1,9 @@
 <template>
 <div>
-    <Navbar/>
-    <Sidebar/>
+    <Navbar @click="isOpen = !isOpen" />
+    <Sidebar v-model="isOpen"
+    @click="isOpen = !isOpen"
+    />
     
     <Bottombar/>
 </div>
@@ -14,6 +16,9 @@ import Bottombar from '@/components/Bottombar.vue'
 
 
 export default {
+  data: () => ({
+    isOpen: false
+  }),
   components: {
     Navbar, Bottombar, Sidebar
   }

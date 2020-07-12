@@ -2,13 +2,13 @@
         <footer class="page-footer white">
             <div class="buttons-list">
                 <a class="btn-flat">
-                    <i class="material-icons" style="font-size: 1.7rem">toc</i>
+                    <i class="material-icons" style="font-size: 1.7rem">apps</i>
                 </a>
                 <a class="btn-flat">
                     <i class="material-icons" style="font-size: 1.7rem">whatshot</i>
                 </a>
                 <a class="btn-flat">
-                    <i class="material-icons" style="font-size: 1.7rem">verified_user</i>
+                    <i class="material-icons" style="font-size: 1.7rem">check_circle</i>
                 </a>
             </div>
         </footer>
