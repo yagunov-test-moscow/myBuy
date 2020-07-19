@@ -1,7 +1,11 @@
 <template>
 <div class="container">
     <li>
-      <Todoitem/>
+      <Todoitem
+      v-for="todo of todos"
+      :todo="todo"
+      :key="todo.id"
+      />
   </li>
 </div>
   
@@ -11,6 +15,7 @@
 import Todoitem from '@/components/Todoitem.vue'
 
 export default {
+    props: ['todos'],
     components: {Todoitem}
 }
 </script>

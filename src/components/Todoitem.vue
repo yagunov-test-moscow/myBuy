@@ -2,10 +2,14 @@
  <div class="row">
   <div class="card-panel teal">
    <label>
-    <input type="checkbox"/>
+    <input type="checkbox"
+    v-on:change="todo.completed = !todo.completed"
+    />
      <span style="font-size: 1.9rem; color: white;" class="check"></span>
     </label>
-    <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+    <span class="white-text"
+    :class="{done: todo.completed}"
+    >{{todo.title}}
     </span>
     <a class="waves-effect waves-teal btn-flat"><i class="material-icons" style="font-size: 1.9rem; color: white;">delete_forever</i></a>
   </div>
@@ -14,7 +18,12 @@
 
 <script>
 export default {
-
+  props: {
+    todo: {
+      type: Object,
+      required: true
+    }
+  }
 }
 </script>
 
@@ -24,6 +33,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+  margin-bottom: 0;
 }
 .btn {
   margin-left: 5px;
@@ -35,6 +45,10 @@ span.check::before{
 [type="checkbox"]:checked+span:not(.lever):before{
     border-right: 2px solid white;
     border-bottom: 2px solid white;
+}
+.done {
+  text-decoration: line-through;
+  text-decoration-color: #000;
 }
 
 </style>

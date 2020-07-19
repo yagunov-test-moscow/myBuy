@@ -2,7 +2,7 @@
   <div>
     <!-- <i class="material-icons" style="font-size: 5rem; margin-top: 150px;">attach_file</i>
     <h2>Здесь будут ваши заметки</h2> -->
-    <Todolist/>
+    <Todolist :todos="todos"/>
   </div>
 </template>
 
@@ -10,6 +10,15 @@
 import Todolist from '@/components/Todolist.vue'
 
 export default {
+  data() {
+    return {
+      todos: [
+      {id: 1, title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', completed: false},
+      {id: 2, title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', completed: false},
+      {id: 3, title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', completed: false}
+    ]
+    }
+  },
   components: {Todolist}
 }
 </script>
