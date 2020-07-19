@@ -1,6 +1,9 @@
 <template>
 <div>
-    <Navbar @click="isOpen = !isOpen" />
+    <Navbar 
+    @click="isOpen = !isOpen" 
+    @addTodo="newTodo"
+    />
     <Sidebar 
     v-model="isOpen"
     @click="isOpen = !isOpen"

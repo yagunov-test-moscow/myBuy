@@ -4,7 +4,6 @@
             <i class="material-icons" style="right: 50px;">arrow_back_ios</i>
         </a>
         <br>
-        
       </ul>
 </template>
 
