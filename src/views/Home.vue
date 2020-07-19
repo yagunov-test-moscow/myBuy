@@ -2,7 +2,10 @@
   <div>
     <!-- <i class="material-icons" style="font-size: 5rem; margin-top: 150px;">attach_file</i>
     <h2>Здесь будут ваши заметки</h2> -->
-    <Todolist :todos="todos"/>
+    <Todolist 
+    :todos="todos"
+    @remove-Todo="removeTodo"
+    />
   </div>
 </template>
 
@@ -17,6 +20,11 @@ export default {
       {id: 2, title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', completed: false},
       {id: 3, title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', completed: false}
     ]
+    }
+  },
+  methods: {
+    removeTodo (id) {
+      this.todos = this.todos.filter(t => t.id !== id)
     }
   },
   components: {Todolist}

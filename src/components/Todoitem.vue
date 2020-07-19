@@ -11,7 +11,9 @@
     :class="{done: todo.completed}"
     >{{todo.title}}
     </span>
-    <a class="waves-effect waves-teal btn-flat"><i class="material-icons" style="font-size: 1.9rem; color: white;">delete_forever</i></a>
+    <a class="waves-effect waves-teal btn-flat"
+    v-on:click="$emit('remove-todo', todo.id)"
+    ><i class="material-icons" style="font-size: 1.9rem; color: white;">delete_forever</i></a>
   </div>
  </div>
 </template>

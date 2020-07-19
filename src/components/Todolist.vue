@@ -5,6 +5,7 @@
       v-for="todo of todos"
       :todo="todo"
       :key="todo.id"
+      v-on:remove-todo="removeTodo"
       />
   </li>
 </div>
@@ -16,7 +17,12 @@ import Todoitem from '@/components/Todoitem.vue'
 
 export default {
     props: ['todos'],
-    components: {Todoitem}
+    components: {Todoitem},
+    methods: {
+      removeTodo (id) {
+        this.$emit('remove-Todo', id)
+      }
+    }
 }
 </script>
 
